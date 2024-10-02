@@ -20,6 +20,6 @@ class UserMiddleware
             # if user role is equal to 0 allow them to access user routes, else ridirect to page 404
             return $next($request);
         }
-        return redirect('/404')->with('fail','you have no access');
+        return redirect('/404')->with('fail','vous n\'avez pas access');
     }
 }

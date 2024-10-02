@@ -20,7 +20,7 @@ class AdminMiddleware
             # if user role is equal to 1 allow them to access admin routes, else ridirect to page 404
             return $next($request);
         }
-        return redirect('/404')->with('fail','you have no access');
-        
+        return redirect('/404')->with('fail','vous n\'avez pas access');
+
     }
 }

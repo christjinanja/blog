@@ -39,12 +39,12 @@ class EditPost extends Component
             'content' => $this->content,
             'photo' => $photo_name,
         ]);
-        
-        }
-        
 
-        
-        session()->flash('message', 'The post was successfully updated!');
+        }
+
+
+
+        session()->flash('message', 'Le post a été modifier avec success!');
         return $this->redirect('/my/posts',navigate: true);
     }
     public function render()

@@ -26,44 +26,44 @@
               <ul class="nav nav-tabs nav-tabs-bordered">
 
                 <li class="nav-item">
-                  <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#profile-overview">Overview</button>
+                  <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#profile-overview">Aperçu</button>
                 </li>
               </ul>
               <div class="tab-content pt-2">
 
                 <div class="tab-pane fade show active profile-overview" id="profile-overview">
-                  <h5 class="card-title">About</h5>
+                  <h5 class="card-title">À propos</h5>
                   <p class="small fst-italic">{{$user_data->about ?? ''}}</p>
 
-                  <h5 class="card-title">Profile Details</h5>
+                  <h5 class="card-title">Details</h5>
 
                   <div class="row">
-                    <div class="col-lg-3 col-md-4 label ">Full Name</div>
+                    <div class="col-lg-3 col-md-4 label ">Nom complet</div>
                     <div class="col-lg-9 col-md-8">{{$user_data->name ?? ''}}</div>
                   </div>
 
                   <div class="row">
-                    <div class="col-lg-3 col-md-4 label">Company</div>
+                    <div class="col-lg-3 col-md-4 label">Entreprise</div>
                     <div class="col-lg-9 col-md-8">{{$user_data->company ?? ''}}</div>
                   </div>
 
                   <div class="row">
-                    <div class="col-lg-3 col-md-4 label">Job</div>
+                    <div class="col-lg-3 col-md-4 label">Emploi</div>
                     <div class="col-lg-9 col-md-8">{{$user_data->job ?? ''}}</div>
                   </div>
 
                   <div class="row">
-                    <div class="col-lg-3 col-md-4 label">Country</div>
+                    <div class="col-lg-3 col-md-4 label">Pays</div>
                     <div class="col-lg-9 col-md-8">{{$user_data->country ?? ''}}</div>
                   </div>
 
                   <div class="row">
-                    <div class="col-lg-3 col-md-4 label">Address</div>
+                    <div class="col-lg-3 col-md-4 label">Adresse</div>
                     <div class="col-lg-9 col-md-8">{{$user_data->address ?? ''}}</div>
                   </div>
 
                   <div class="row">
-                    <div class="col-lg-3 col-md-4 label">Phone</div>
+                    <div class="col-lg-3 col-md-4 label">Contact</div>
                     <div class="col-lg-9 col-md-8">(255) {{$user_data->phone ?? ''}}</div>
                   </div>
 

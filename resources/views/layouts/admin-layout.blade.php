@@ -81,7 +81,7 @@
 
           <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications">
             <li class="dropdown-header">
-              You have 4 new notifications
+              Vous avez 4 nouvel notifications
               <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
             </li>
             <li>
@@ -140,7 +140,7 @@
               <hr class="dropdown-divider">
             </li>
             <li class="dropdown-footer">
-              <a href="#">Show all notifications</a>
+              <a href="#">Choisir toutes les notifications</a>
             </li>
 
           </ul><!-- End Notification Dropdown Items -->
@@ -156,7 +156,7 @@
 
           <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow messages">
             <li class="dropdown-header">
-              You have 3 new messages
+              Vous avez 3 nouveaux messages
               <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
             </li>
             <li>
@@ -206,7 +206,7 @@
             </li>
 
             <li class="dropdown-footer">
-              <a href="#">Show all messages</a>
+              <a href="#">Choisir tout les messages</a>
             </li>
 
           </ul><!-- End Messages Dropdown Items -->
@@ -262,7 +262,7 @@
             <li>
               <a class="dropdown-item d-flex align-items-center" href="/logout">
                 <i class="bi bi-box-arrow-right"></i>
-                <span>Sign Out</span>
+                <span>Déconnexion</span>
               </a>
             </li>
 
@@ -305,7 +305,7 @@
   <!-- ======= Footer ======= -->
   <footer id="footer" class="footer">
     <div class="copyright">
-      &copy; Copyright <strong><span>NiceAdmin</span></strong>. All Rights Reserved
+      &copy; Copyright <strong><span>Jinanja</span></strong>. All Rights Reserved
     </div>
     <div class="credits">
       <!-- All the links in the footer should remain intact. -->

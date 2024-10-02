@@ -28,7 +28,7 @@ class AuthController extends Controller
             'email' => 'required|email|unique:users',
             'password' => 'required|min:6|max:8|confirmed',
         ]);
-        
+
         try {
             $user = new User;
             $user->name = $request->name;
@@ -41,10 +41,10 @@ class AuthController extends Controller
             $user_profile->user_id = $user->id;
             $user_profile->save();
 
-            return redirect('/registration/form')->with('success','You Have been Registered Successfully!');
+            return redirect('/registration/form')->with('Félicitation','Votre inscription a été réalisée avec succès!');
         } catch (\Exception $e) {
             return redirect('/registration/form')->with('error',$e->getMessage());
-            
+
         }
     }
 
@@ -61,13 +61,13 @@ class AuthController extends Controller
             'email' => 'required',
             'password' => 'required|min:6|max:8',
         ]);
-        
+
         try {
             // login logic here
             $userCredentials = $request->only('email','password');
 
             if(Auth::attempt($userCredentials)){
-                // redirect user to home page based on role 
+                // redirect user to home page based on role
                 // this allow us to use single login page to authenticate users with different roles..
 
                 if(auth()->user()->role == 0){ //here role is a column I added in users table
@@ -75,11 +75,11 @@ class AuthController extends Controller
                 }elseif(auth()->user()->role == 1){
                     return redirect('/admin/home');
                 }else{
-                    return redirect('/')->with('error','Error to find your role');
+                    return redirect('/')->with('error','Erreur lors de la recherche de votre rôle');
                 }
-                
+
             }else{
-                return redirect('/login/form')->with('error','Wrong User Credentials');
+                return redirect('/login/form')->with('error','Informations incorrectes');
             }
         } catch (\Exception $e) {
             return redirect('/login/form')->with('error',$e->getMessage());
@@ -117,24 +117,24 @@ class AuthController extends Controller
             $data['url'] = $url;
             $data['email'] = $request->email;
             $data['title'] = 'Password Reset';
-            $data['body'] = 'Please click the link below to reset your password';
+            $data['body'] = 'Veuillez cliquer sur le lien ci-dessous pour réinitialiser votre mot de passe';
 
             Mail::send('forgotPasswordMail',['data' => $data], function($message) use ($data){
                 $message->to($data['email'])->subject($data['title']);
             });
 
-            
+
             $passwordReset = new PasswordReset;
             $passwordReset->email = $request->email;
             $passwordReset->token = $token;
             $passwordReset->user_id = $value->id;
             $passwordReset->save();
 
-            return back()->with('success','please check your mail inbox to reset your password');
+            return back()->with('success','veuillez vérifier votre boîte de réception pour réinitialiser votre mot de passe');
         }else{
-            return redirect('/forgot/password')->with('error','email does not exist!');
+            return redirect('/forgot/password')->with('error','email n\'existe pas!');
         }
-    
+
     }
 
     public function loadResetPassword(Request $request){
@@ -164,7 +164,7 @@ class AuthController extends Controller
             // delete reset token
             PasswordReset::where('email',$request->user_email)->delete();
 
-            return redirect('/login/form')->with('success','Password Changed Successfully');
+            return redirect('/login/form')->with('success','Mot de passe changer avec succes');
         } catch (\Exception $e) {
             return back()->with('error',$e->getMessage());
         }

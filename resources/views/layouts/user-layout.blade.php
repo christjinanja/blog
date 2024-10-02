@@ -82,7 +82,7 @@
 
           <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications">
             <li class="dropdown-header">
-              You have 4 new notifications
+              Vous avez 4 nouvel notification
               <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
             </li>
             <li>
@@ -141,7 +141,7 @@
               <hr class="dropdown-divider">
             </li>
             <li class="dropdown-footer">
-              <a href="#">Show all notifications</a>
+              <a href="#">choisir toutes les notif</a>
             </li>
 
           </ul><!-- End Notification Dropdown Items -->
@@ -157,7 +157,7 @@
 
           <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow messages">
             <li class="dropdown-header">
-              You have 3 new messages
+              Vous avez trois nouveaux messages
               <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
             </li>
             <li>
@@ -207,7 +207,7 @@
             </li>
 
             <li class="dropdown-footer">
-              <a href="#">Show all messages</a>
+              <a href="#">Choisir tout les messages</a>
             </li>
 
           </ul><!-- End Messages Dropdown Items -->
@@ -224,7 +224,7 @@
           <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
             <li class="dropdown-header">
               <h6>{{$logged_user->name}}</h6>
-              <span>User</span>
+              <span>Utilisateur</span>
             </li>
             <li>
               <hr class="dropdown-divider">
@@ -263,7 +263,7 @@
             <li>
               <a class="dropdown-item d-flex align-items-center" href="/logout">
                 <i class="bi bi-box-arrow-right"></i>
-                <span>Sign Out</span>
+                <span>Déconnexion</span>
               </a>
             </li>
 
@@ -283,7 +283,7 @@
       <li class="nav-item">
         <a class="nav-link " href="/user/home" wire:navigate>
           <i class="bi bi-grid"></i>
-          <span>Home page</span>
+          <span>Page d'acceuil</span>
         </a>
       </li><!-- End Dashboard Nav -->
 
@@ -292,13 +292,13 @@
       <li class="nav-item">
         <a class="nav-link collapsed" href="/my/posts" wire:navigate>
           <i class="bi bi-archive-fill"></i>
-          <span>My posts</span>
+          <span>Ma publication</span>
         </a>
       </li>
        <li class="nav-item">
         <a class="nav-link collapsed" href="/profile" wire:navigate>
           <i class="bi bi-person"></i>
-          <span>Profile</span>
+          <span>Mon profile</span>
         </a>
       </li><!-- End Profile Page Nav -->
 
