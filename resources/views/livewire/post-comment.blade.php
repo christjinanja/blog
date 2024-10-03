@@ -1,5 +1,5 @@
 <div>
-    <form wire:submit="Laisser un commentaire">
+    <form wire:submit="leaveComment">
         <div class="form-group">
             <textarea wire:model="comment" class="form-control" cols="30" rows="3" placeholder="Votre commentaire va ici..."></textarea>
             @error('comment')
