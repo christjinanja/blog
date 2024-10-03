@@ -1,7 +1,7 @@
 <div>
-    <form wire:submit="leaveComment">
+    <form wire:submit="Laisser un commentaire">
         <div class="form-group">
-            <textarea wire:model="comment" class="form-control" cols="30" rows="3" placeholder="Your comment goes here..."></textarea>
+            <textarea wire:model="comment" class="form-control" cols="30" rows="3" placeholder="Votre commentaire va ici..."></textarea>
             @error('comment')
                 <span class="text-danger">{{$message}}</span>
             @enderror
