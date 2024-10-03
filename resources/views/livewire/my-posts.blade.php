@@ -29,7 +29,7 @@
                 <div class="col" >
                     <div class="card" style="background-color: #e3a598; font-size:20px;">
                       <div class="card-body text-center text-white">
-                        poster
+                        Publier
                       </div>
                       <div class="card-footer text-center text-white"  style="background-color: #e3a598">
                         {{$post_count}}

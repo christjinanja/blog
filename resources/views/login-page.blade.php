@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Pages / Login - NiceAdmin Bootstrap Template</title>
+  <title>Pages / Login -Bienvenu </title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -50,7 +50,7 @@
               <div class="d-flex justify-content-center py-4">
                 <a href="index.html" class="logo d-flex align-items-center w-auto">
                   <img src="assets/img/logo.png" alt="">
-                  <span class="d-none d-lg-block">NiceAdmin</span>
+                  <span class="d-none d-lg-block">Bienvenu</span>
                 </a>
               </div><!-- End Logo -->
 
@@ -59,8 +59,8 @@
                 <div class="card-body">
 
                   <div class="pt-4 pb-2">
-                    <h5 class="card-title text-center pb-0 fs-4">Login to Your Account</h5>
-                    <p class="text-center small">Enter your username & password to login</p>
+                    <h5 class="card-title text-center pb-0 fs-4">Connectez-vous à votre compte</h5>
+                    <p class="text-center small">Entrez votre email et votre mot de passe pour vous connecter</p>
                   </div>
                     {{-- display flash message here --}}
                     @if (Session::has('success'))
@@ -80,18 +80,18 @@
                     </div>
 
                     <div class="col-12">
-                      <label for="yourPassword" class="form-label">Password</label>
+                      <label for="yourPassword" class="form-label">Mot de passe</label>
                       <input type="password" name="password" class="form-control">
                       <span class="text-danger">@error('password'){{$message}}@enderror</span>
                     </div>
                     <div class="col-12">
-                      <p class="small mb-0">Forgot password? <a href="/forgot/password">Recover here!</a></p>
+                      <p class="small mb-0">Mot de passe oublié ? <a href="/forgot/password">Récupérez ici!</a></p>
                     </div>
                     <div class="col-12">
-                      <button class="btn btn-primary w-100" type="submit">Login</button>
+                      <button class="btn btn-primary w-100" type="submit">Connectez vous</button>
                     </div>
                     <div class="col-12">
-                      <p class="small mb-0">Don't have account? <a href="/registration/form">Create an account</a></p>
+                      <p class="small mb-0">Vous n'avez pas de compte ? <a href="/registration/form">Créer un compte</a></p>
                     </div>
                   </form>
 
@@ -103,7 +103,7 @@
                 <!-- You can delete the links only if you purchased the pro version. -->
                 <!-- Licensing information: https://bootstrapmade.com/license/ -->
                 <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/ -->
-                Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+                {{-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> --}}
               </div>
 
             </div>
@@ -126,7 +126,7 @@
    <script src="{{ asset('assets/vendor/simple-datatables/simple-datatables.js') }}"></script>
    <script src="{{ asset('assets/vendor/tinymce/tinymce.min.js') }}"></script>
    <script src="{{ asset('assets/vendor/php-email-form/validate.js') }}"></script>
- 
+
    <!-- Template Main JS File -->
    <script src="{{ asset('assets/js/main.js') }}"></script>
    <script src="{{ asset('js/jquery.min.js') }}"></script>

@@ -50,7 +50,7 @@
               <div class="d-flex justify-content-center py-4">
                 <a href="index.html" class="logo d-flex align-items-center w-auto">
                   <img src="assets/img/logo.png" alt="">
-                  <span class="d-none d-lg-block">NiceAdmin</span>
+                  <span class="d-none d-lg-block">Hello !</span>
                 </a>
               </div><!-- End Logo -->
 
@@ -59,8 +59,8 @@
                 <div class="card-body">
 
                   <div class="pt-4 pb-2">
-                    <h5 class="card-title text-center pb-0 fs-4">Recover Your Password</h5>
-                    <p class="text-center small">Enter your email</p>
+                    <h5 class="card-title text-center pb-0 fs-4">Récupérez votre mot de passe</h5>
+                    <p class="text-center small">Entrez votre email</p>
                   </div>
                     {{-- display flash message here --}}
                     @if (Session::has('success'))
@@ -78,10 +78,10 @@
                     </div>
 
                     <div class="col-12">
-                      <button class="btn btn-primary w-100" type="submit">Send Email</button>
+                      <button class="btn btn-primary w-100" type="submit">Envoyer</button>
                     </div>
                     <div class="col-12">
-                      <p class="small mb-0"> <a href="/login/form">login</a></p>
+                      <p class="small mb-0"> <a href="/login/form">se connecte</a></p>
                     </div>
                   </form>
 
@@ -93,7 +93,7 @@
                 <!-- You can delete the links only if you purchased the pro version. -->
                 <!-- Licensing information: https://bootstrapmade.com/license/ -->
                 <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/ -->
-                Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+                {{-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> --}}
               </div>
 
             </div>
@@ -116,7 +116,7 @@
    <script src="{{ asset('assets/vendor/simple-datatables/simple-datatables.js') }}"></script>
    <script src="{{ asset('assets/vendor/tinymce/tinymce.min.js') }}"></script>
    <script src="{{ asset('assets/vendor/php-email-form/validate.js') }}"></script>
- 
+
    <!-- Template Main JS File -->
    <script src="{{ asset('assets/js/main.js') }}"></script>
    <script src="{{ asset('js/jquery.min.js') }}"></script>

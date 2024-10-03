@@ -1,6 +1,6 @@
  {{-- here we can check if logged user is the one with the profile then, if yes
     give access to edit otherwise just show a profile only.
-    
+
     this approach seems to have an issue let's sort it out in this way.. --}}
        <div class="row">
         <div class="col-xl-4">
@@ -29,57 +29,57 @@
               <ul class="nav nav-tabs nav-tabs-bordered">
 
                 <li class="nav-item">
-                  <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#profile-overview">Overview</button>
+                  <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#profile-overview">Aperçu</button>
                 </li>
 
                 <li class="nav-item">
-                  <button class="nav-link" data-bs-toggle="tab" data-bs-target="#profile-edit">Edit Profile</button>
+                  <button class="nav-link" data-bs-toggle="tab" data-bs-target="#profile-edit">Modifier le profil</button>
                 </li>
 
                 <li class="nav-item">
-                  <button class="nav-link" data-bs-toggle="tab" data-bs-target="#profile-settings">Settings</button>
+                  <button class="nav-link" data-bs-toggle="tab" data-bs-target="#profile-settings">Paramètres</button>
                 </li>
 
                 <li class="nav-item">
-                  <button class="nav-link" data-bs-toggle="tab" data-bs-target="#profile-change-password">Change Password</button>
+                  <button class="nav-link" data-bs-toggle="tab" data-bs-target="#profile-change-password">Changer le mot de passe</button>
                 </li>
 
               </ul>
               <div class="tab-content pt-2">
 
                 <div class="tab-pane fade show active profile-overview" id="profile-overview">
-                  <h5 class="card-title">About</h5>
+                  <h5 class="card-title">À propos</h5>
                   <p class="small fst-italic">{{$user_data->about ?? ''}}</p>
 
-                  <h5 class="card-title">Profile Details</h5>
+                  <h5 class="card-title">Détails du profil</h5>
 
                   <div class="row">
-                    <div class="col-lg-3 col-md-4 label ">Full Name</div>
+                    <div class="col-lg-3 col-md-4 label ">Nom et prénom</div>
                     <div class="col-lg-9 col-md-8">{{$user_data->name ?? ''}}</div>
                   </div>
 
                   <div class="row">
-                    <div class="col-lg-3 col-md-4 label">Company</div>
+                    <div class="col-lg-3 col-md-4 label">Entreprise</div>
                     <div class="col-lg-9 col-md-8">{{$user_data->company ?? ''}}</div>
                   </div>
 
                   <div class="row">
-                    <div class="col-lg-3 col-md-4 label">Job</div>
+                    <div class="col-lg-3 col-md-4 label">Emplois</div>
                     <div class="col-lg-9 col-md-8">{{$user_data->job ?? ''}}</div>
                   </div>
 
                   <div class="row">
-                    <div class="col-lg-3 col-md-4 label">Country</div>
+                    <div class="col-lg-3 col-md-4 label">Pays</div>
                     <div class="col-lg-9 col-md-8">{{$user_data->country ?? ''}}</div>
                   </div>
 
                   <div class="row">
-                    <div class="col-lg-3 col-md-4 label">Address</div>
+                    <div class="col-lg-3 col-md-4 label">Adresse</div>
                     <div class="col-lg-9 col-md-8">{{$user_data->address ?? ''}}</div>
                   </div>
 
                   <div class="row">
-                    <div class="col-lg-3 col-md-4 label">Phone</div>
+                    <div class="col-lg-3 col-md-4 label">Contact</div>
                     <div class="col-lg-9 col-md-8">(255) {{$user_data->phone ?? ''}}</div>
                   </div>
 
@@ -93,7 +93,7 @@
                 <div class="tab-pane fade profile-edit pt-3" id="profile-edit">
 
                   <!-- Profile Edit Form -->
-                  
+
                     <livewire:profile-image-edit :existingImage="$user_data->image" />
                         {{-- this is to pass image from datbase to edit image component --}}
                         {{-- create component for the remaining form --}}
@@ -107,37 +107,37 @@
                   <form>
 
                     <div class="row mb-3">
-                      <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Email Notifications</label>
+                      <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Notifications Email</label>
                       <div class="col-md-8 col-lg-9">
                         <div class="form-check">
                           <input class="form-check-input" type="checkbox" id="changesMade" checked>
                           <label class="form-check-label" for="changesMade">
-                            Changes made to your account
+                            Modifications apportées à votre compte
                           </label>
                         </div>
                         <div class="form-check">
                           <input class="form-check-input" type="checkbox" id="newProducts" checked>
                           <label class="form-check-label" for="newProducts">
-                            Information on new products and services
+                            Informations sur les nouveaux produits et services
                           </label>
                         </div>
                         <div class="form-check">
                           <input class="form-check-input" type="checkbox" id="proOffers">
                           <label class="form-check-label" for="proOffers">
-                            Marketing and promo offers
+                            Offres marketing et promotionnelles
                           </label>
                         </div>
                         <div class="form-check">
                           <input class="form-check-input" type="checkbox" id="securityNotify" checked disabled>
                           <label class="form-check-label" for="securityNotify">
-                            Security alerts
+                            Alertes de sécurité
                           </label>
                         </div>
                       </div>
                     </div>
 
                     <div class="text-center">
-                      <button type="submit" class="btn btn-primary">Save Changes</button>
+                      <button type="submit" class="btn btn-primary">Enregistrer les modifications</button>
                     </div>
                   </form><!-- End settings Form -->
 
@@ -148,28 +148,28 @@
                   <form>
 
                     <div class="row mb-3">
-                      <label for="currentPassword" class="col-md-4 col-lg-3 col-form-label">Current Password</label>
+                      <label for="currentPassword" class="col-md-4 col-lg-3 col-form-label">Mot de passe actuel</label>
                       <div class="col-md-8 col-lg-9">
                         <input name="password" type="password" class="form-control" id="currentPassword">
                       </div>
                     </div>
 
                     <div class="row mb-3">
-                      <label for="newPassword" class="col-md-4 col-lg-3 col-form-label">New Password</label>
+                      <label for="newPassword" class="col-md-4 col-lg-3 col-form-label">Nouveau mot de passe</label>
                       <div class="col-md-8 col-lg-9">
                         <input name="newpassword" type="password" class="form-control" id="newPassword">
                       </div>
                     </div>
 
                     <div class="row mb-3">
-                      <label for="renewPassword" class="col-md-4 col-lg-3 col-form-label">Re-enter New Password</label>
+                      <label for="renewPassword" class="col-md-4 col-lg-3 col-form-label">Ressaisissez le nouveau mot de passe</label>
                       <div class="col-md-8 col-lg-9">
                         <input name="renewpassword" type="password" class="form-control" id="renewPassword">
                       </div>
                     </div>
 
                     <div class="text-center">
-                      <button type="submit" class="btn btn-primary">Change Password</button>
+                      <button type="submit" class="btn btn-primary">Changer le mot de passe</button>
                     </div>
                   </form><!-- End Change Password Form -->
 

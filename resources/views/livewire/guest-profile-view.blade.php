@@ -38,7 +38,7 @@
                   <h5 class="card-title">Details</h5>
 
                   <div class="row">
-                    <div class="col-lg-3 col-md-4 label ">Nom complet</div>
+                    <div class="col-lg-3 col-md-4 label ">Nom et prénom</div>
                     <div class="col-lg-9 col-md-8">{{$user_data->name ?? ''}}</div>
                   </div>
 

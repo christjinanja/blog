@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Pages / Register - NiceAdmin Bootstrap Template</title>
+  <title>Pages / Register - Bienvenu pour la premier fois</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -50,7 +50,7 @@
               <div class="d-flex justify-content-center py-4">
                 <a href="index.html" class="logo d-flex align-items-center w-auto">
                   <img src="assets/img/logo.png" alt="">
-                  <span class="d-none d-lg-block">NiceAdmin</span>
+                  <span class="d-none d-lg-block">Bienvenu</span>
                 </a>
               </div><!-- End Logo -->
 
@@ -59,8 +59,8 @@
                 <div class="card-body">
 
                   <div class="pt-4 pb-2">
-                    <h5 class="card-title text-center pb-0 fs-4">Create an Account</h5>
-                    <p class="text-center small">Enter your personal details to create account</p>
+                    <h5 class="card-title text-center pb-0 fs-4">Créer un compte</h5>
+                    <p class="text-center small">Entrer vos détail pour la création du compte</p>
                   </div>
                   {{-- display flash message here --}}
                   @if (Session::has('success'))
@@ -72,34 +72,34 @@
                   <form class="row g-3" action="{{ route('registerUser')}}" method="POST">
                     @csrf
                     <div class="col-12">
-                      <label for="yourName" class="form-label">Your Name</label>
+                      <label for="yourName" class="form-label">Votre Nom</label>
                       <input type="text" name="name" class="form-control">
                       <span class="text-danger">@error('name'){{$message}}@enderror</span>
                     </div>
 
                     <div class="col-12">
-                      <label for="yourEmail" class="form-label">Your Email</label>
+                      <label for="yourEmail" class="form-label">Votre Email</label>
                       <input type="email" name="email" class="form-control">
                       <span class="text-danger">@error('email'){{$message}}@enderror</span>
                     </div>
 
                     <div class="col-12">
-                      <label for="yourPassword" class="form-label">Password</label>
+                      <label for="yourPassword" class="form-label">Mot de passe</label>
                       <input type="password" name="password" class="form-control">
                       <span class="text-danger">@error('password'){{$message}}@enderror</span>
                     </div>
                     <div class="col-12">
-                        <label for="yourPassword" class="form-label">Confirm Password</label>
+                        <label for="yourPassword" class="form-label">Confirmez le mot de passe</label>
                         <input type="password" name="password_confirmation" class="form-control">
                         <span class="text-danger">@error('password_confirmation'){{$message}}@enderror</span>
                       </div>
 
-                
+
                     <div class="col-12">
-                      <button class="btn btn-primary w-100" type="submit">Create Account</button>
+                      <button class="btn btn-primary w-100" type="submit">Créer un compte</button>
                     </div>
                     <div class="col-12">
-                      <p class="small mb-0">Already have an account? <a href="/login/form">Log in</a></p>
+                      <p class="small mb-0">Vous avez déjà un compte ? <a href="/login/form">Se connecter</a></p>
                     </div>
                   </form>
 
@@ -111,7 +111,7 @@
                 <!-- You can delete the links only if you purchased the pro version. -->
                 <!-- Licensing information: https://bootstrapmade.com/license/ -->
                 <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/ -->
-                Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+                {{-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> --}}
               </div>
 
             </div>

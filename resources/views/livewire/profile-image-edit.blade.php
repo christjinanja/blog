@@ -1,6 +1,6 @@
 <div class="row mb-3">
     <form wire:submit="uploadImage">
-        <label for="profileImage" class="col-md-4 col-lg-3 col-form-label">Profile Image</label>
+        <label for="profileImage" class="col-md-4 col-lg-3 col-form-label">Photo de profile</label>
         <div class="col-md-8 col-lg-9">
         <img height="100px" width="100px" src="{{ asset('storage/images/'.$existingImage) }}" alt="profile image">
         <input type="file" wire:model="image" class="form-control">

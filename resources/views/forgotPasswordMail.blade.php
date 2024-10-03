@@ -8,6 +8,6 @@
 </head>
 <body>
     <p>{{$data['body']}}</p><br>
-    <a href="{{$data['url']}}">reset password</a>
+    <a href="{{$data['url']}}">réinitialiser le mot de passe</a>
 </body>
 </html>
